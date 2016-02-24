@@ -1,13 +1,13 @@
 body
 	height 1000px
 
-.menu-lateral
+.side-menu
 	color: #fff
 	@extend .col-md-2
 	padding 0
 	height 1000px	
 	background-color #2C4762
-	.segura-logo
+	.logo-widget
 		border-bottom 1px solid #fff
 		padding 10px
 		.logo
@@ -17,12 +17,12 @@ body
 				@extend .col-xs-4
 				img
 					@extend .img-responsive
-			&__texto
+			&__text
 				font-size 20px
 				@extend .col-md-7
 				@extend .col-xs-6
 				color #fff
-.segura-user
+.user-widget
 	border-bottom 1px solid #fff
 	padding 10px 0
 	.user
@@ -36,12 +36,12 @@ body
 			img
 				@extend .img-responsive
 				border-radius 76px
-		&__nome
+		&__name
 			margin-top 20px
 			@extend .col-md-5
 			@extend .col-xs-4
 			font-size 20px
-.lista
+.list
 	margin-top 20px
 	list-style: none
 	font-size: 20px
@@ -55,7 +55,7 @@ body
 			color: #fff
 			text-decoration: none
 			text-align: center
-.sublista
+.sublist
 	margin: 10px 0
 	padding 0
 	li
@@ -70,7 +70,7 @@ body
 	background-color: transparent
 	border none
 	box-shadow: none
-.botao-menu
+.menu-button
 	@extend .hidden-lg
 	font-size 20px
 	padding 10px
@@ -80,35 +80,43 @@ body
 	right 0
 	z-index 1000
 	color #000	
-.conteudo
+.content
 	@extend .col-md-10
 	@extend .col-xs-12
 	height 900px
 	padding 0
 	background-color #FFF
 	
-.titulo
+.title
+	@extend .col-xs-12
 	background-color #ddd
 	width 100%
 	padding 20px 0
 	h1
 		margin 0
 		text-align center
-.segura-form
+.widget-form
 	margin-top 80px	
 	@extend .col-md-4
 	@extend .col-md-offset-4
 	
-.segura-tabela
+.widget-table
 	margin-top 80px
 	@extend .col-md-12
 	overflow-x auto
 	
+.notification
+	@extend .col-md-12
+	padding 20px 30px
+	background-color rgba(100,149,237,0.7)
+	text-align center
+	font-size 18px
+	margin-bottom 20px
 	
 
 +breakpoint(mobile,middle)
 	.logo
-		&__texto
+		&__text
 			padding 24px 0
 		&__img
 			img
@@ -119,25 +127,26 @@ body
 			img
 				width 50%
 				margin 0 auto
-	.menu-lateral
+	.side-menu
 		position absolute
 		display table
-		top -436px
+		top -457	px
 		padding 35px 0
 		z-index 999
 		height auto
+		width 100%
 		background-color rgba(44,71,98,0.9)
-		.segura-logo
+		.logo-widget
 			padding 10px 0
 			.logo
 				padding 0
-	.conteudo
+	.content
 		margin-top 100px
-	.segura-user
+	.user-widget
 		padding 10px 0
 		.user
 			margin 0
-	.lista
+	.list
 		li
 			width 100%
 			margin 10px 0
@@ -149,25 +158,25 @@ body
 	.row
 		margin 0
 	.logo
-		&__texto
+		&__text
 			padding 24px 0
-	.menu-lateral
+	.side-menu
 		position absolute
 		display table
 		top -950px
 		z-index 999
 		background-color rgba(44,71,98,0.9)
-		.segura-logo
+		.logo-widget
 			padding 10px 0
 			.logo
 				padding 0
-	.conteudo
+	.content
 		margin-top 100px
-	.segura-user
+	.user-widget
 		padding 10px 0
 		.user
 			margin 0
-	.lista
+	.list
 		li
 			width 100%
 			margin 10px 0
