@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('.botao-menu').click(function() {
-        $('.menu-lateral').animate({
-            top: parseInt($('.menu-lateral').css('top'),10) == 0 ? 40-$('.menu-lateral').outerHeight() : 0
+    $('.menu-button').click(function() {
+        $('.side-menu').animate({
+            top: parseInt($('.side-menu').css('top'),10) == 0 ? 40-$('.side-menu').outerHeight() : 0
         });
     });
 });
